@@ -1,0 +1,179 @@
+body {
+    border-radius: 3rem;
+    box-shadow: 0.8rem 0.8rem 5rem 0 gray;
+    font-family: 'Montserrat', monospace;
+    color: rgb(48, 48, 48);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(48, 48, 48);
+}
+
+a:hover {
+    color: rgb(180, 180, 180);
+}
+
+.container {
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 3rem 5rem;
+}
+
+.personal-card {
+    width: 40%;
+    float: left;    
+    padding-top: 3rem;
+}
+
+.personal-description {
+    width: 50%;
+    float: left;
+    margin-left: 5%;
+    padding-top: 4rem;
+}
+
+.self-image-cropper {
+    margin: 0 auto;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.self-image {
+    width: 130%;
+    height: auto;
+    margin-top: -4rem;
+    margin-left: -2.5rem;
+}
+
+.about {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.intro h1:hover {
+    color: rgb(180, 180, 180);
+}
+
+.social-media i {
+    font-size: 1.5rem;
+    line-height: inherit;
+    color: white;
+}
+
+.social-media-wrapper {
+    display: inline-block;
+    border-radius: 100%;
+    background-color: rgb(48, 48, 48);
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    margin: .5rem;
+}
+
+.social-media-wrapper:hover {
+    background-color: rgb(100, 100, 100);
+}
+
+.about-me {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.about-me::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 20rem;
+    background-color: rgb(45, 57, 82);
+    position: relative;
+    margin-left: 1rem;
+}
+
+.description-content {
+    margin: 0 auto;
+}
+
+.description-content p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.description-content b {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.description-content a {
+    color: rgb(55, 110, 185);
+}
+
+.description-content a:hover {
+    color: rgb(180, 180, 180);
+}
+
+.skill-set {
+    overflow: hidden;
+}
+.skill-set-1, .skill-set-2 {
+    float: left;
+    list-style: none;
+    line-height: 2;
+    font-size: 1rem;
+}
+
+.footer {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 960px) {
+    .container {
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 1rem 2rem;
+    }
+    
+    .self-image-cropper {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .self-image {
+        width: 120%;
+        margin-top: -4rem;
+        margin-left: -0.6rem;
+    }
+    
+    .social-media i {
+        font-size: 1rem;
+    }
+
+    .social-media-wrapper {
+        height: 2.5rem;
+        width: 2.5rem;
+        line-height: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .personal-card, .personal-description {
+        width: 100%;
+        float: initial;
+    }
+    .personal-description {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .container {
+        padding: 1rem 1rem;
+    }
+}
